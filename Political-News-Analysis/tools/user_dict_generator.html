@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User Dict Generator</title>
+		<style type="text/css">
+			label {
+				border: 1px solid #ccc;
+				padding: 10px;
+				margin: 0 0 15px;
+				display: block; 
+			}
+			label:hover {
+				background: #eee;
+				cursor: pointer;
+			}
+			span {
+				margin: 10px;
+				padding: 5px;
+			}
+			#copyButton {
+				position: fixed;
+				bottom: 5%;
+				right: 5%;
+				height: 10vh;
+				width: 10vh;
+			}
+			:checked + span {
+				background: #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<textarea id="text" cols="55" rows="7" placeholder="Input strings seperated with space.e.g.\nmeow\nneow\noeow">meow&#13;&#10;neow&#13;&#10;oeow</textarea>
+			<button onclick="generateSurface()">Enter</button>
+		</div>
+		<div id="checkBox"></div>
+		<p id="choosenWords"></p>
+		<button id="copyButton" onClick="copyToClipboard(choosenWords)">Copy</button>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+
+		// variables
+		let checkBox = document.getElementById("checkBox")
+		let textarea = document.getElementById("text")
+		let choosenWordsPara = document.getElementById("choosenWords")
+		let choosenWords = ''
+
+		// initialize
+		textarea.placeholder = textarea.placeholder.replace(/\\n/g, '\n')
+		generateSurface()
+
+		// functions
+		function generateSurface(){
+			let list = [...new Set(textarea.value.split('\n'))]
+			let $options = ''
+			let cnt = 0
+			for(let str of list){
+				cnt++
+				if(cnt % 100 == 1) $options += cnt + '<br>' 
+				if (str == '') continue
+				$options += `<label><input type="checkbox" value="${str}"/><span>${str}</span></label>`
+			}
+			checkBox.innerHTML = $options
+			$("input[type='checkbox']").change(showChoosenWords)
+			showChoosenWords()
+		}
+
+		function showChoosenWords() {
+			choosenWords = ''
+			$("input[type='checkbox']").each(function(index){
+				if (this.checked) choosenWords += this.value + '\n'
+			})
+			choosenWordsPara.innerHTML = choosenWords.replace(/\n/g, '<br>')
+			console.log(choosenWords)
+		}
+
+		function copyToClipboard(text) {
+			window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+		}
+
+	</script>
+</html>
