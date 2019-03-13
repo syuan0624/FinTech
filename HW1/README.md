@@ -7,7 +7,7 @@ request:選用request的原因在於,透過https使用restful-api做get, post時
 beautifulsoup:此套件為parse html常見的套件, bs能幫我們取出html中我們想要選取的部分, 直接轉成我們要的資料格式。
 
 ## 2.抓取目標資料之流程圖
-![image](http://github.com/LeoChang84/FinTech-1/tree/master/HW1/img/flow.png)
+![image](https://github.com/LeoChang84/FinTech-1/blob/master/HW1/img/flow.png)
 
 ## 3.範例程式
 ```
