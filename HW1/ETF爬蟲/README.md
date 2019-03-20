@@ -49,6 +49,7 @@ HW1使用的爬蟲套件為`requests`及`Beautifulsoup`。
     scrape('GLD', 'nav', '2015-12-31').head()
 ```
 `output`
+
 |  | GLD |
 | :-: | :-: |
 | 2015-12-31 | 101.6247 |
@@ -82,6 +83,8 @@ HW1使用的爬蟲套件為`requests`及`Beautifulsoup`。
 - 所有ETF比較，使用`Plotly`建立下拉式選單，可以選擇觀看不同類別(黃金、原油)的ETF
 
 ![plotly_menuplot](images/plotly_menuplot.png)
+
+_註 : 上圖可直接至[plotly](https://plot.ly/~r05323045/40.embed)觀看大圖_
 
 - ETF與其追蹤指數比較
 
