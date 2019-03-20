@@ -1,0 +1,11 @@
+beautifulsoup4==4.7.1
+bs4==0.0.1
+matplotlib==3.0.3
+mpl-finance==0.10.0
+numpy==1.16.2
+numpydoc==0.8.0
+pandas==0.24.2
+pandas-datareader==0.7.0
+python-dateutil==2.8.0
+python-highcharts==0.4.2
+requests==2.21.0
