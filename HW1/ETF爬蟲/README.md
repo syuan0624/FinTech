@@ -49,6 +49,7 @@ HW1使用的爬蟲套件為`requests`及`Beautifulsoup`。
     scrape('GLD', 'nav', '2015-12-31').head()
 ```
 `output`
+
 |  | GLD |
 | :-: | :-: |
 | 2015-12-31 | 101.6247 |
