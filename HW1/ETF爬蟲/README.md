@@ -108,3 +108,31 @@ technical_analysis('UGL', '2018-07-01')
 `output`
 
 ![technical_analysis](images/technical_analysis.png)
+
+--- 
+
+## Part III 如何使用
+
+下載這個Repository
+
+```
+git clone https://github.com/syuan0624/FinTech.git
+```
+
+進入該資料夾
+
+```
+cd ./HW
+```
+
+安裝相關套件
+
+```
+pip3 -r requirements.txt
+```
+
+使用jupyter notebook打開ipynb檔案
+
+```
+jupyter notebook ＄filename
+```
