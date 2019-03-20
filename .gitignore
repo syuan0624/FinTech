@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 MANIFEST
 build
 dist
@@ -27,3 +28,8 @@ __pycache__
 .vscode
 .pytest_cache
 .python-version
+=======
+*.ipynb_checkpoints
+*.pkl
+__pycache__/*
+>>>>>>> 48aa34dccaf12e23f14f2ce2d9675583da7ffba8
