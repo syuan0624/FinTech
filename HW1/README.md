@@ -14,7 +14,7 @@ HW1使用的爬蟲套件為`requests`及`Beautifulsoup`。
 
 ### 流程圖 - 
 
-![flowchart](images/flowchart.svg)
+![flowchart](ETF爬蟲/images/flowchart.svg)
 
 --- 
 ### 5種當別人使用你的程式最有可能會遇到的錯誤情況 - 
@@ -74,15 +74,15 @@ HW1使用的爬蟲套件為`requests`及`Beautifulsoup`。
 ```
 `output`
 
-![single_etf](images/single_etf.png)
+![single_etf](ETF爬蟲/images/single_etf.png)
 
 - 隨機取3檔ETF比較
 
-![random_compare](images/random_compare.png)
+![random_compare](ETF爬蟲/images/random_compare.png)
 
 - 所有ETF比較，使用`Plotly`建立下拉式選單，可以選擇觀看不同類別(黃金、原油)的ETF
 
-![plotly_menuplot](images/plotly_menuplot.png)
+![plotly_menuplot](ETF爬蟲/images/plotly_menuplot.png)
 
 _註 : 上圖可直接至[plotly](https://plot.ly/~r05323045/40.embed)觀看大圖_
 
@@ -98,7 +98,7 @@ performance('USO', '2015-12-31')
 ```
 `output`
 
-![compare_to_index_3y](images/compare_to_index_3y.png)
+![compare_to_index_3y](ETF爬蟲/images/compare_to_index_3y.png)
 
 -  單ㄧETF技術分析
 
@@ -107,7 +107,7 @@ technical_analysis('UGL', '2018-07-01')
 ```
 `output`
 
-![technical_analysis](images/technical_analysis.png)
+![technical_analysis](ETF爬蟲/images/technical_analysis.png)
 
 --- 
 
