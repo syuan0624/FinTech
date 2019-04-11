@@ -29,3 +29,13 @@
     3.將文件與有分類過的單詞進行TDM(term to matrix)  
     4.將TDM轉成Co-Occurrence Matrix  
     5.繪製出各類別之間的共現圖
+
+    - NER標記
+        >以NER(Named Entity Recognition) [套件](https://github.com/Determined22/zh-NER-TF)將初步整理過格式的客服資料進行標記，定義人名與事件。
+
+    - TDM(Term-document matrix)
+        >將Document裡面的各個單詞以視覺化方式呈現彼此間的關係, 用來進行初步檢驗、觀察Document內是否有可進一步分析的現象。
+
+    - Co-Occurence Matrix
+        >將TDM轉成以term與input sentence間的關係列表,來觀察每個term在各個input sentence中出現的次數。 
+
