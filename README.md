@@ -19,3 +19,14 @@
     >工業生產指數：  
     說明：Fed在2014年編制的一個全新的「勞動市場狀況指數」，這指數綜合了包括非農、勞動市場參與率、空缺數、離職率、失業率及平均薪資等19個就業領域。  
     資料來源 : [Fed](https://www.federalreserve.gov/releases/g17/Current/default.htm ) 
+
+## HW2
+
+- NER標記
+    >以NER(Named Entity Recognition) [套件](https://github.com/Determined22/zh-NER-TF)將初步整理過格式的客服資料進行標記，定義人名與事件。
+
+- TDM(Term-document matrix)
+    >將Document裡面的各個單詞以視覺化方式呈現彼此間的關係, 用來進行初步檢驗、觀察Document內是否有可進一步分析的現象。
+
+- Co-Occurence Matrix
+    >將TDM轉成以term與input sentence間的關係列表,來觀察每個term在各個input sentence中出現的次數。 
