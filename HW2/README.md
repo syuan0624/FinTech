@@ -58,14 +58,14 @@ NER Model：[A simple BiLSTM-CRF model for Chinese Named Entity Recognition](htt
 ## Part III 將文件與有分類過的單詞進行TDM
 使對話紀錄與分詞結果成為一個稀疏矩陣。  
 
-![TDM](images/TDM.png)
+![TDM](images/TDM.PNG)
 
 --- 
 
 ## Part IV 將TDM轉成Co-Occurrence Matrix
 從Co-Occurrence Matrix中可觀察得知分詞與分詞之間相互關聯的程度。
 
-![COM](images/COM.png)
+![COM](images/COM.PNG)
 
 --- 
 
