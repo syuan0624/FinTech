@@ -3,9 +3,9 @@
 
 ## 1. 使用以下3篇論文作為評估ETF之指標的實作
 ### 評比指標如A,B,C三項- 
->A.2009_JBF_Portfolio performance evaluation with generalized Sharpe ratios_ASKSR : 使用第38式
->B.2011_JBF_Omega performance measure and portfolio insurance : 使用第8式，L=無風險利率
->C.2013_EL_A global index of riskiness : 使用P.494頁中的Q(g)
+>A.2009_JBF_Portfolio performance evaluation with generalized Sharpe ratios_ASKSR : 使用第38式  
+>B.2011_JBF_Omega performance measure and portfolio insurance : 使用第8式，L=無風險利率  
+>C.2013_EL_A global index of riskiness : 使用P.494頁中的Q(g)  
 
 ---
 
@@ -31,6 +31,6 @@
 ---
 
 ## 4.結論
-⋅⋅* 週資料或月結果評比相似嗎 ?
-⋅⋅* 不同指標評比結果相似嗎 ?
+⋅⋅* 週資料或月結果評比相似嗎?  
+⋅⋅* 不同指標評比結果相似嗎?  
 
