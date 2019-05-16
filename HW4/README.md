@@ -23,10 +23,10 @@
 ## 3.評比結果
 
 ### 週資料分析組
-![week](images/week.PNG)
+![week](image/week.PNG)
 
 ### 月資料分析組
-![month](images/month.PNG)
+![month](image/month.PNG)
 
 ---
 
