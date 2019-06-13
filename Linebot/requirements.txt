@@ -1,0 +1,10 @@
+line-bot-sdk
+flask
+oauth2client
+gspread
+flask_socketio
+gunicorn
+gevent
+gevent-websocket
+gevent-socketio
+eventlet

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fintech-240901",
+  "private_key_id": "c1533929ae815663ceb54d8726fde52e87c0a680",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCy/B0iL0WWfLYB\n4yeOXhz7Dwbos7GGb5xsaAKIHbFmxKMb3TIdYrpm9D9xUraldFvtukf3I9sGTQnc\nok9tb2a5FaxYlavtm9VowLRUS7NY81eR6wR60xfy2KioAu9MgUmlpxWRFV7GkF0j\nClEPRzf4KqVWtHQemjrd0utvgsShuYvroCSYuuE5BU5K1j/Ts/hMRL2lf/9pvPKz\neyZo6aOVqSf4SNcGUG984xWFL7tR0wH7OmAHVb2Y95pFzryA8TZOqJRBzp8qNRmi\n2eVdNw+4mm/CUi7PLM9OYdwnJBuw60X+rT+ivH8XaWXakro9lKbTnvSSPUkxGEJ7\n6sWrCOwjAgMBAAECggEAVfbBtVv387W1IwXrRzULfUdz3YsErhloCycPZDnCrSWv\nY2AjRDrZZT5VREPiRmgzCORJ0TjO5uFUZbwtItX5A9cVfjxwpYANiTDYy43KN2Q0\nwHgcoDNH0tLdekhij5+e9CliMdsOOJc4rG41jX16s74jyBeGl/YiZMz7WAT6FOP9\n2c5GUypRTmlo7S20PGULvWvRhGenTPrqP2trLiXZs+jNTUkkizIQIAh9IELfxP8k\nd65YpudDomRjoTgy5XxvrjVfTjkqZo3n7nQD6MZNQTJe76InNVvcMT9d1OzCxgF0\nDdbuqOIgih0AFWWTYAetNM4L9uMVkO1vQG9aXVtpmQKBgQD2VUhH9drSUgrw0tJJ\nNVGRqGOpUUwpM7y34K9QNOARBhw512vUV4YV+1kN0O8O/3NtnHJdJvLOCrdbQF5J\nCJ7SIsqmXSyd6juxqbNMGINYNYFjcxP40lPubvh81uflIyG0IBn+7bD5QHJIvPIN\njlTVvUppFXhVIZSBKDNeecT/uQKBgQC6Ajw5hS4n9Eo/z5heKvtyln7tGfTMxHMV\nN7CAMAT4bNOPWWFegI6mgktstNm0UlmERKrmfG6T8qD/LQhIMD+DXEU06xMOrxTY\n4J4sBM+lP9UZc9hXdYuQsS/az7ppfCQQ1xrocuaQEr0jxgJMI+vrF8J1++/2GQvt\n8i0GYQMguwKBgEEarxzdvLTDnEKj5ZIVtnZBw/1XEEL/eow6pPsUzneRXtpmtggM\nDdM3eATvyI71MuOwaoV2KswMBwPmEkVJMvik21x22bju1FITYODmxagFlCndm1Sy\n+h3VVHViMy3bSCgcJ+K5nYFy6AGTdoHgsUlAWy9EzmXplx8/qbv5gPh5AoGAGZHP\nF5UgOCvTvRvbdS5xbFoVzqAfz7o9m7ARGj3/oOrM1krSILyJX4hPt/zQZIJhfdY2\nrAJ07O+QhCN7nPjM8lDPzqt17jHRKtMNyz1KEgxJTftnxPYKnnRNAMZHeNKw3oPD\nVirdWPbKe01v6WmSt7mHaNKeNPVSd34wBE13sZsCgYAzXta4Q2DX3vWArt83L9kk\n9lez1aBI79fu62rjX+dDpbF6+q9xPSxW3zSQaBg/Y7k0kWXT6BEX9w/n0gYhTRwL\ndO/g7K0/mKtr1lDynaqpFl4b0R7err2rve3JOvJ6+m5wno4cmXF37avQZulIjnYC\nQwqE9PFrewlGtZpek48u1w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "fintech07@fintech-240901.iam.gserviceaccount.com",
+  "client_id": "111387249309309078102",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fintech07%40fintech-240901.iam.gserviceaccount.com"
+}
