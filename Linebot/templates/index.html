@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FinTech Team07</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="static/css/application.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        var socket = io.connect('https://' + document.domain + ':' + location.port);
+
+        socket.on('connect', function() {
+            socket.emit('connect_event', {data: 'connected!'});
+        })
+
+        socket.on('server_msg', function(msg) {
+            $('#log').append("<div class='panel panel-warning'><div class='panel-heading'>" + $('<span/>').text("系統").html() + "</div><div class='panel-body'>" + $('<span/>').text(msg.data).html() + "</div></div>");
+
+        });
+
+        socket.on('server_response', function(msg) {
+            $('#log').append("<div class='panel panel-default'><div class='panel-heading'>" + $('<span/>').text("客戶："+msg.name).html() + "</div><div class='panel-body'>" + $('<span/>').text(msg.data).html() + "</div></div>");
+            $('#token').val(msg.token);
+            $('#userid').val(msg.userid);
+        });
+
+        function send(){
+            socket.emit('client_event', {data: $('#emit_data').val(),token: $('#token').val(),userid: $('#userid').val()});
+            $('#log').append("<div class='panel panel-info'><div class='panel-heading'>" + $('<span/>').text("客服").html() + "</div><div class='panel-body'>" + $('<span/>').text($('#emit_data').val()).html() + "</div></div>");
+        }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>FinTech Team07</h1>
+        <hr />
+      </div>
+      <form id="emit" class="form-inline">
+        <input type="hidden" id="token" value="">
+        <input type="hidden" id="userid" value="">
+        <div class="form-group">
+          <input id="emit_data" type="text" class="form-control" placeholder="Enter chat text here!" autofocus />
+        </div>
+        <button class="btn btn-primary" type="button" onclick="send();">Send</button>
+      </form>
+      <div class="page-header">
+        <h1>Chat Log</h1>
+      </div>
+      <div id="log">
+      </div>
+    </div>
+
+
+
+
+  </body>
+</html>
