@@ -1,5 +1,10 @@
-Flask          
-gunicorn
 line-bot-sdk
-requests
-beautifulsoup4
+flask
+oauth2client
+gspread
+flask_socketio
+gunicorn
+gevent
+gevent-websocket
+gevent-socketio
+eventlet

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FinTech Team07</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        var socket = io.connect('https://' + document.domain + ':' + location.port);
+
+        socket.on('connect', function() {
+            socket.emit('connect_event', {data: 'connected!'});
+        })
+
+        socket.on('server_msg', function(msg) {
+            $('#log').append("<div class='alert alert-warning' role='alert'><strong>系統：</strong>" + msg.data + "</div>");
+
+        });
+
+        socket.on('server_response', function(msg) {
+            $('#log').append("<div class='callout callout-default'><strong>" + $('<p/>').text("客戶( "+msg.name+" )：").html() + "</strong>" + msg.data + "</div>");
+            $('#token').val(msg.token);
+            $('#userid').val(msg.userid);
+        });
+
+        function send(){
+            socket.emit('client_event', {data: $('#emit_data').val(),token: $('#token').val(),userid: $('#userid').val()});
+            $('#log').append("<div class='callout2 callout-primary'>" + $('#emit_data').val()+ "<strong>" + $('<p/>').text("：客服").html() + "</strong></div>");
+        }
+
+        function updateMsg(msg) {
+          var ta = $("#log");
+          var t = new Date();
+          var s = t.getHours() + ':' + t.getMinutes() + ':' + t.getSeconds();
+          var m = '[ ' + msg.nickname + ']: ' + msg.msg;
+          ta.val(ta.val()+'\n'+m);
+          setTimeout(function(){
+            ta.scrollTop(ta[0].scrollHeight - ta.innerHeight());
+          },10);
+        }
+    </script>
+    <style>
+      .callout {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+        border-left-color: #777;
+        p {
+          color: #777;
+        }
+      }
+      .callout2 {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-right-width: 5px;
+        border-radius: 3px;
+        text-align: right;
+        border-right-color: #428bca;
+        p {
+          color: #428bca;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">FinTech Team07</a>
+    </nav>
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Chat Log</h1>
+      </div>
+      <hr>
+
+      <div  id="log" style="overflow:auto;height:500px;">
+
+
+      </div>
+      <hr>
+
+        <form id="emit">
+          <input type="hidden" id="token" value="">
+          <input type="hidden" id="userid" value="">
+          <div class="form-row">
+            <div class="col-lg-11">
+              <input id="emit_data" type="text" class="form-control" placeholder="Enter chat text here!" autofocus >
+            </div>
+            <div class="col-lg-1">
+              <button class="btn btn-primary" type="button" onclick="send();">Send</button>
+            </div>
+          </div>
+        </form>
+
+    </div>
+
+
+
+
+  </body>
+</html>
