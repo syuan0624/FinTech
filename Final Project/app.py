@@ -29,9 +29,9 @@ from oauth2client.service_account import ServiceAccountCredentials as SAC
 
 
 # Channel Access Token
-line_bot_api = LineBotApi('SaWBAJr14nxXgAzOWm6GpyVHSMh0VBMNL2DL6KhrR9LZb6xriwq8riOPh/HLGgAl+KVWcm2QTX0wc7tFsa3FmjwgH5ZU4030AV/MinBo8vuvvlQDaCYCI9WlAT84MIDsXWTZmgTF22SwAT8AB5OF5wdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('請輸入Channel Access Token')
 # Channel Secret
-handler = WebhookHandler('3c8395d619f2321c4e607d9cd487e0fc')
+handler = WebhookHandler('請輸入Channel Secret')
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
