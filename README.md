@@ -39,3 +39,10 @@
     - Co-Occurence Matrix
         >將TDM轉成以term與input sentence間的關係列表,來觀察每個term在各個input sentence中出現的次數。 
 
+## HW4
+
+- ETF評比績效理論實作  
+    > 使用以下3篇論文作為評估ETF之指標的實作，評比指標如A,B,C三項
+    A.2009_JBF_Portfolio performance evaluation with generalized Sharpe ratios_ASKSR : 使用第38式  
+    B.2011_JBF_Omega performance measure and portfolio insurance : 使用第8式，L=無風險利率  
+    C.2013_EL_A global index of riskiness : 使用P.494頁中的Q(g)  
