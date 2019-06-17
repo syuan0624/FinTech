@@ -38,4 +38,18 @@
 
     - Co-Occurence Matrix
         >將TDM轉成以term與input sentence間的關係列表,來觀察每個term在各個input sentence中出現的次數。 
+## HW3
+- 介紹評比績效指標
+    - 請每組繳交至少兩頁的 word 檔案，說明使用的指標，並上傳到作業區中，有關介紹指標的部分，請盡量包含下面 4 點(如果沒有也請誠實說找不到):  
+    >1. 介紹指標的由來，例如發明人或是提出的機構
+    >2. 介紹這個指標的內涵，包含如何計算
+    >3. 介紹指標的依據，根據甚麼樣的財務理論或是邏輯來建立
+    >4. 指標的應用面，例如有那些著名的機構有採用你這個指標
 
+## HW4
+
+- ETF評比績效理論實作  
+    - 使用以下3篇論文作為評估ETF之指標的實作，評比指標如A,B,C三項  
+    >A.2009_JBF_Portfolio performance evaluation with generalized Sharpe ratios_ASKSR : 使用第38式  
+    >B.2011_JBF_Omega performance measure and portfolio insurance : 使用第8式，L=無風險利率  
+    >C.2013_EL_A global index of riskiness : 使用P.494頁中的Q(g)  
