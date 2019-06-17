@@ -53,3 +53,10 @@
     >A.2009_JBF_Portfolio performance evaluation with generalized Sharpe ratios_ASKSR : 使用第38式  
     >B.2011_JBF_Omega performance measure and portfolio insurance : 使用第8式，L=無風險利率  
     >C.2013_EL_A global index of riskiness : 使用P.494頁中的Q(g)  
+
+## Final Project
+
+- 我們的專案選擇呈現在LineBot上面，野村證券原先也擁有LineBot，主要針對原先內容提出兩個擴充功能：  
+    >1. 使用LineBot進行開戶教學，方便客戶查看開戶表單的填寫方式，希望能提高開戶率。
+    >2. 直接在LineBot上與真人客服聯繫，同時記錄對話文字內容，並可以將這些文字內容導回HW2所提的EDA流程。
+
