@@ -2,7 +2,7 @@ beautifulsoup4==4.7.1
 bs4==0.0.1
 matplotlib==3.0.3
 mpl-finance==0.10.0
-numpy==1.16.2
+numpy==1.22.0
 numpydoc==0.8.0
 pandas==0.24.2
 pandas-datareader==0.7.0
